@@ -16,7 +16,7 @@
           <table border="0" cellpadding="2" cellspacing="0" width="100%">
             <tr>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Cód.','id');?></div></th>
-              <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Nome.','nome');?></div></th>
+              <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Nome','nome');?></div></th>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('CPF','cpf');?></div></th>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Email','email');?></div></th>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Telefone','telefone');?></div></th>
