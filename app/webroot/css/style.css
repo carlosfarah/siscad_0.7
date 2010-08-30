@@ -217,31 +217,31 @@ a:hover {
 	color: #FFFFFF;
 }
 
-/* Menu */
+/* Menuadmin */
 
 #menuadmin {
 	float: right;
-	width: 500px;
-  border: 1px solid #333;
+	width: 400px;
+  #border: 1px solid #333;
   text-align: right;
-  
+  margin-top: 20px;
 }
 
 #menuadmin ul {
 	margin: 0px;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 10px 10px 10px;
 	list-style: none;
 }
 
 #menuadmin li {
-	float: left;
+	float: right;
 }
 
 #menuadmin a {
 	display: block;
 	float: left;
-	height: 37px;
-	padding: 13px 30px 0px 30px;
+	height: 40px;
+	padding: 0px 10px 0px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;

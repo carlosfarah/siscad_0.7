@@ -64,8 +64,13 @@
        'url' => array('controller' => 'eventos', 'action' => 'inscricao')
        ));
     ?>
-    <p>
-    Copyright (c) 2010 SISCAD - FUNDAEP. <br />Desenvolvido por: carlosfarah@gmail.com.<br />
+    
+    
+<div id="footer">
+	<p>Copyright (C) 2010 SISCAD - FUNDAEP. <br />
+	Desenvolvido por:<br />
+	Carlos Farah (carlosfarah@gmail.com) e
+	Thiago Freire (freireaf@yahoo.com.br)<br />
     <?php
     echo $html->image("cake.power.gif", array(
        "alt" => "Brownies", "border" => 0, "align"=>"center",
@@ -73,7 +78,6 @@
        ));
     ?>
     </p>
-
 </div>
   
 </body>
