@@ -8,7 +8,7 @@
   <?php
     echo $this->Form->create('Registro', array('type'=>'post'));
 
-    echo $this->Form->input('evento_id', array('label'=>'Eventos:', 'div'=>array('id'=>'search-text', 'title'=>'Div title')));
+    echo $this->Form->input('evento_id', array('label'=>'Eventos:', 'div'=>array('nome_evento'=>'search-text', 'title'=>'Div title')));
     echo $this->Form->end('Próximo passo >>', array('div'=>array(
                               'id'=>'search-text', 'title'=>'Div title')));
   ?>

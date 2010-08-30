@@ -19,7 +19,7 @@
        )); ?>
 				<h1><a href="#"><span>SISCAD</span> - FUNDAEP</a></h1>
 			</div>
-			<div id="menu">
+			<div id="menuadmin">
       <?php //echo $this->element($menusuperior); ?>
 				<ul>
 					<li><?php echo $html->link('Home', '/useres/area_restrita/'); ?></li>
