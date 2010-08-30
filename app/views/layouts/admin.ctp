@@ -13,6 +13,10 @@
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
+      <?php echo $html->image("logo.gif", array(
+       "alt" => "Brownies", "border" => 0, 
+       'url' => array('controller' => 'eventos', 'action' => 'inscricao')
+       )); ?>
 				<h1><a href="#"><span>SISCAD</span> - FUNDAEP</a></h1>
 			</div>
 			<div id="menu">

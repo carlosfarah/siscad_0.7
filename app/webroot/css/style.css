@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: #FF3000;
+	color: #3B5472;
 }
 
 h1 {
@@ -43,7 +43,7 @@ ul, ol {
 
 a {
 	text-decoration: underline;
-	color: #EB1D1D;
+	color: #FFB200;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
 #header {
 	overflow: hidden;
 	width: 1000px;
-	height: 50px;
+	height: 75px;
 	margin: 0px auto 20px auto;
 	background: url(<?= $html->url("img01.jpg") ?>) no-repeat right top;
 }
@@ -167,11 +167,21 @@ a:hover {
 	color: #FFFFFF;
 }
 
+#logo2 {
+	float: right;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
 /* Menu */
 
 #menu {
-	float: right;
-	width: 550px;
+	float: left;
+	width: 430px;
+  #border: 1px solid #333;
+  text-align: right;
 }
 
 #menu ul {

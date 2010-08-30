@@ -13,7 +13,7 @@ class EventosController extends AppController{
     $this->set('evento', $this->Evento->read());
   }
 
-  function add() {
+  function add(){
     $this->layout = 'admin';
     if(!empty($this->data)) {
       if($this->Evento->save($this->data)) {

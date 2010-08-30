@@ -13,17 +13,29 @@
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
+      <?php echo $html->image("logo.gif", array(
+       "alt" => "Brownies", "border" => 0, 
+       'url' => array('controller' => 'eventos', 'action' => 'inscricao')
+       )); ?>
 				<h1><a href="#"><span>SISCAD</span> - FUNDAEP</a></h1>
 			</div>
 			<div id="menu">
       <?php //echo $this->element($menusuperior); ?>
+      <h1><strong>Sistema de inscrição on line</strong></h1>
+<!--
 				<ul>
-					<li><?php echo $html->link('Home', '/useres/login/'); ?></li>
-					<li><?php echo $html->link('Inscrever-se', '/eventos/inscricao'); ?></li>
-          <li><?php echo $html->link('Eventos', '/eventos/list_eventos'); ?></li>
-          <li><?php echo $html->link('Login', '/useres/login'); ?></li>
+					<li><?php //echo $html->link('Home', '/useres/login/'); ?></li>
+					<li><?php //echo $html->link('Inscrever-se', '/eventos/inscricao'); ?></li>
+          <li><?php //echo $html->link('Eventos', '/eventos/list_eventos'); ?></li>
+          <li><?php //echo $html->link('Login', '/useres/login'); ?></li>
 				</ul>
+-->
 			</div>
+      <div id="logo2">
+      <?php echo $html->image("logo_ufvjm.gif", array(
+       "alt" => "Brownies", "border" => 0
+       )); ?>
+      </div>
 		</div>
 	</div>
 	<div id="page">
@@ -41,7 +53,27 @@
 	</div>
 
 <div id="footer">
-	<p>Copyright (c) 2010 SISCAD - FUNDAEP. <br />Desenvolvido por: carlosfarah@gmail.com</a>.</p>
+    <?php echo $html->image("cartoes.png", array(
+       "alt" => "Brownies", "border" => 0, "align"=>"right",
+       'url' => array('controller' => 'eventos', 'action' => 'inscricao')
+        )); 
+    ?>
+    <?php 
+       echo $html->image("seguro.png", array(
+       "alt" => "Brownies", "border" => 0, "align"=>"left",
+       'url' => array('controller' => 'eventos', 'action' => 'inscricao')
+       ));
+    ?>
+    <p>
+    Copyright (c) 2010 SISCAD - FUNDAEP. <br />Desenvolvido por: carlosfarah@gmail.com.<br />
+    <?php
+    echo $html->image("cake.power.gif", array(
+       "alt" => "Brownies", "border" => 0, "align"=>"center",
+       'url' => array('controller' => 'eventos', 'action' => 'inscricao')
+       ));
+    ?>
+    </p>
+
 </div>
   
 </body>
