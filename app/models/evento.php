@@ -13,7 +13,9 @@ class Evento extends AppModel{
                                   'required'=>true, 
                                   'message'=>'>> O campo Descrição do evento é obrigatório!'),
 
-
+                    'valor'=>array('rule'=>'notEmpty', 
+                                  'required'=>true, 
+                                  'message'=>'>> O campo Valor do evento é obrigatório!'),
 
                   );
 }

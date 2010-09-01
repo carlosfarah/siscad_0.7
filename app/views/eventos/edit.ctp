@@ -6,6 +6,10 @@
                             'size'=>33,
                             'div'=>array('id'=>'search-text')));
 
+    echo $this->Form->input('valor', array('label'=>'Valor do evento: R$', 
+                            'size'=>33,
+                            'div'=>array('id'=>'search-text')));
+
     echo $this->Form->input('desc_evento', array('rows'=>'3', 'label'=>'Descrição do evento:', 
                             'cols'=>52,
                             'div'=>array('id'=>'search-text')));

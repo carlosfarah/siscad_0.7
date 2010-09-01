@@ -22,6 +22,7 @@
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Cód.','id');?></div></th>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Evento','nome_evento');?></div></th>
               <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('Descrição do Evento','desc_evento');?></div></th>
+              <th align="center"><div id="titulo_tabela"><?php echo $paginator->sort('R$ do Evento','valor');?></div></th>
               <th align="center" width="50px" colspan="3"><div id="titulo_tabela">a&ccedil;&atilde;o</div></th>
             </tr>
             <?php foreach($eventos as $i=>$evento){ ?>
@@ -29,6 +30,7 @@
                 <?php echo "<td align='center'>" . $evento['Evento']['id'] . "</td>"; ?>
                 <?php echo "<td>" . $evento['Evento']['nome_evento'] . "</td>"; ?>
                 <?php echo "<td>" . $evento['Evento']['desc_evento'] . "</td>"; ?>
+                <?php echo "<td>" . $evento['Evento']['valor'] . "</td>"; ?>
                 <td align="center"><?php echo $html->image('view.png', array('alt'=>'Detalhes',
                                                               'border'=>0,
                                                               'url'=>array('action'=>'view',$evento['Evento']['id'])))?>

@@ -1968,3 +1968,5 @@
 2010-08-26 03:28:51 Notice: Notice (8): Undefined variable: eventos in [/var/www/cakephp/app/views/eventos/inscritos.ctp, line 8]
 2010-08-30 09:26:30 Notice: Notice (8): session_start() [http://php.net/function.session-start]: ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in [/var/www/siscad_0.7/cake/libs/cake_session.php, line 584]
 2010-08-30 11:36:46 Notice: Notice (8): session_start() [http://php.net/function.session-start]: ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in [/var/www/siscad_0.7/cake/libs/cake_session.php, line 584]
+2010-09-01 14:29:26 Notice: Notice (8): Undefined index: Evento in [/var/www/siscad_0.7/app/controllers/registros_controller.php, line 52]
+2010-09-01 14:29:26 Notice: Notice (8): Array to string conversion in [/var/www/siscad_0.7/cake/libs/router.php, line 1556]
