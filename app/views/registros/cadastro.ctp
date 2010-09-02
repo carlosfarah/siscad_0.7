@@ -7,7 +7,7 @@
 <div id="inscrever_col">
 <?php
   $id = $this->passedArgs['id'];
-  $valor = $this->passedArgs['valor'];
+  $valor = array_key_exists ('valor', $this->passedArgs) ? $this->passedArgs['valor'] : '';
   $nome_evento = $this->passedArgs['evento'];
 
     echo $this->Form->create('Registro', array('url'=> array('id'=>$id, 'valor'=>$valor, 'evento'=>$nome_evento)));
@@ -46,8 +46,8 @@
     echo $this->Form->hidden('evento', array('value'=>$this->passedArgs['id'],
                             'div'=>array('id'=>'search-text')));
 
-    echo $this->Form->hidden('evento', array('value'=>$this->passedArgs['valor'],
-                            'div'=>array('id'=>'search-text')));
+    echo $this->Form->hidden('evento', array('value'=>$valor,
+                             'div'=>array('id'=>'search-text')));
 
     echo $this->Form->hidden('evento', array('value'=>$this->passedArgs['evento'],
                             'div'=>array('id'=>'search-text')));
