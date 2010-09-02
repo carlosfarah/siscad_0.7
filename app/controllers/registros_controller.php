@@ -49,7 +49,7 @@ class RegistrosController extends AppController {
   function iniciar(){
     if(!empty($this->data)){
       if(!empty($this->data ['Registro']['evento_id'])){
-        $this->redirect(array('action'=>'cadastro', 'evento_id'=>$this->data ['Registro']['evento_id']));
+        $this->redirect(array('action'=>'cadastro', 'evento_id'=>$this->data ['Registro']['evento_id'], 'valor'=>$this->data ['Evento']['valor']));
       }
     }
   }
@@ -57,18 +57,8 @@ class RegistrosController extends AppController {
   function cadastro(){
     if(!empty($this->data)){
       if($this->Registro->save($this->data)){
-        //$this->passedArgs['evento_id'];
         $this->Session->setFlash('Voc&ecirc; foi cadastrado.');
-        $this->redirect(array('action'=>'pagseguro', 'evento'=>$this->data ['Registro']['evento']));
-      }
-    else {
-      if(!empty($this->data)){
-          if($this->Registro->save($this->data)){
-            $this->data ['Registro']['evento'];
-            $this->Session->setFlash('Voc&ecirc; foi cadastrado.');
-            $this->redirect(array('action'=>'pagseguro', 'evento'=>$this->data ['Registro']['evento']));
-          }
-        }
+        $this->redirect(array('controller'=>'registros', 'action'=>'pagseguro', 'id'=>$this->passedArgs['id'], 'valor'=>$this->passedArgs['valor'], 'evento'=>$this->passedArgs['evento']));
       }
     }
   }

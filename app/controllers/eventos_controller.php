@@ -47,8 +47,8 @@ class EventosController extends AppController{
   }
 
   function iniciar() {
-    $this->set('eventos', $this->Evento->find('list'));
-    $this->Evento->set($this->data);
+    $this->Eventos->recursive = 0;
+    $this->set('eventos', $this->paginate());
   }
 
   function list_eventos() {
